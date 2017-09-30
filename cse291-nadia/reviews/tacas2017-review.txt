@@ -1,0 +1,24 @@
+What does EUSolver use as behavioral constraints? Structural constraint? Search strategy?
+Behavioral constraints: Specifications (has to be plainly separable)
+Structural constraints: User defined conditional expression grammar
+Search strategy: Creates a decision tree to model conditional expressions. Builds expressions using the decision tree and verifies 
+
+What are the main two pruning/decomposition techniques EUSolver uses to speed up the search? What enables these technique?
+
+EUSolver decomposes the problem into finding smaller expressions that are correct on subsets of input and composes them with predicates (using decision trees).
+
+Plainly separable specification and Conditional expression grammars enables these techniques
+
+What would be a naive alternative to decision tree learning for synthesizing branch conditions? What are the disadvantages of this alternative?
+The naive method for synthesizing branching would be to find a set of pred for each cover[t] such that  if pt satisfies all pred then pt belongs to cover[].
+ then the expresion corresponding to set of all terms expr(T)is defined as a) 0 if len(T) == 0 b) if (pred for t) then t else expr(T-{t})  otherwise for any t in set T
+
+ Decision tree would give expressions of smaller length than this naive alternative.
+ Decision tree would find the expression in less time.    
+
+ This article reviews the paper "Scaling Enumerative ProgramSynthesis via Divide and Conquer" and discusses the following:
+\begin{itemize}
+\item What does EUSolver use as behavioral constraints? Structural constraint? Search strategy?
+\item What are the main two pruning/decomposition techniques EUSolver uses to speed up the search? What enables these technique?
+\item What would be a naive alternative to decision tree learning for synthesizing branch conditions? What are the disadvantages of this alternative?
+\end{itemize}
