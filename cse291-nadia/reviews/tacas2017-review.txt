@@ -22,3 +22,13 @@ The naive method for synthesizing branching would be to find a set of pred for e
 \item What are the main two pruning/decomposition techniques EUSolver uses to speed up the search? What enables these technique?
 \item What would be a naive alternative to decision tree learning for synthesizing branch conditions? What are the disadvantages of this alternative?
 \end{itemize}
+
+Please provide a short, neutral summary of the paper (1-2 paragraphs), as well as your score (would you accept this paper for publication in a conference if you were on the program committee?)
+
+The paper proposes an alternative to Enumerative Program Synthesis, where instead of enumerating through the entire search space, EUSolver decomposes the problem into finding smaller expressions that are correct on subsets of input and composes them using predicates (by decision trees). The paper compares this alternative with other state-of-the-art synthesis techniques on performance, quality of solution and effect of anytime extension.
+
+List the most significant contributions of this paper (2-5 items)
+The paper has contributed a divide and conquer alternative to enumerative program synthesis by only using enumeration to learn small expressions which are correct on smaller subsets. These expressions are then composed using predicates by learning a decision tree. The paper shows that this leads to compact solutions in much lesser time.
+
+List the most significant limitations of the approach presented in the paper (2-5 items)
+The divide and conquer approach can only be applied to plainly separable specification and conditional expression grammar.
