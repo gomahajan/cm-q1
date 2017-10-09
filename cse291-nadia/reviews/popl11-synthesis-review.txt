@@ -1,0 +1,32 @@
+What does FlashFill use as behavioral constraints? Structural constraints? Search strategy?
+Behavioral constraints: Input output examples
+Structural constraints: Built-in string expression language
+Search strategy: Enumerative search. It first computes the set of all trace expressions (trace set) for an input-output pair. If the trace sets for all examples have a non empty intersection, then that would be the set of all target expressions. Otherwise, it first partitions the space such that each partition has a non empty intersection and then looks for conditionals.
+
+Write a program in the FlashFill string expression language that extracts conference years; the program should satisfy the following examples: "287 papers submitted to POPL 2018" -> "2018", "FM 2012 took place in Oslo" -> "2012"
+Substr(v, p1, p2), where
+p1 = Pos(TokenSeq(UpperTok, SpaceTok), NumTok, -1)
+p2 = Pos(NumTok,/epsilon, -1)
+
+Section 3.1 explains why FlashFill restricts its regular expression language. Which lines of the algorithm in Fig. 7 in particular would not be feasible without this restriction?
+Lines 2 and 3 in GeneratePosition would be infinite loops since you would have infinite number of regex matching any string then.
+    
+Discuss how FlashFill's condition abduction mechanism is different from the one used by EUSolver.
+
+EUSolver learns a decision tree with terms as labels, predicates as attributes and points as samples.
+
+FlashFill on the other hand, first greedily finds the best partition and then learns the boolean classifier. Consequently, it only allows conditionals at top level. 
+
+
+
+Please provide a short, neutral summary of the paper (1-2 paragraphs), as well as your score (would you accept this paper for publication in a conference if you were on the program committee?)
+
+The paper describes a string expression language and an interactive synthesis algorithm from input output examples on it. The algorithm first learns the set of all trace expressions (trace set) for an input-output pair and then looks for loops/conditionals. The paper evaluates the performance of this algorithm by building the program synthesis system as an an add-in called QuickCode, for Microsoft Excel 2010.
+
+List the most significant contributions of this paper (2-5 items)
+The paper has contributed a novel learning algorithm for programming by example, which unlike recent work or more-general program synthesis techniques, is more scalable and efficient. It uses a greedy strategy for learning the conditionals instead of doing the combinatorial search. To speed up learning traces, it uses a DAG based data-structure that can evaluate certain operations efficiently. A prototype built on this synthesis system is shown to be efficient, requiring maximum 4 rounds of interaction (for any scenario in their benchmark).  
+
+a divide and conquer alternative to enumerative program synthesis by only using enumeration to learn small expressions which are correct on smaller subsets. These expressions are then composed using predicates by learning a decision tree. The paper shows that this leads to compact solutions in much lesser time.
+built the program synthesis system as an add-in called QuickCode, for Microsoft Excel 2010.
+
+List the most significant limitations of the approach presented in the paper (2-5 items)
