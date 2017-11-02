@@ -1,0 +1,23 @@
+What does Brahma use as behavioral constraints? Structural constraints? Search strategy?
+Behavioral constraints: I/O Oracle can be Input output examples or an inefficient program
+Structural constraints: Loop free programs composed of given base components
+Search strategy: The search is divided into finding solutions for two kinds of constraints: I/O behavioural constraint whose solution yeilds a candidate program consistent with I/O oracle on given input-output examples, and the distinguishing constraint whose solution provides the input non-equivalent programs.
+
+Is it possible to specify Brahma's structural constraints in the SyGuS format (as a grammar)? Is yes, show a small example. If no, explain why.
+yes, NonTerminals could be set of all incomplete assignments to l, initial non terminal could be all unassigned, transformations are one step assignments maintaining the syntactic rules. 
+
+Consider the following modification of Brahma's synthesis problem: you are given N components, but your program is only allowed to use any K of them (K <= N). How would you modify the SMT encoding in section 4.1 to enforce this restriction?
+We could add another variable w(l) which represents if line indexed l is being used or not. Their sum should be k and we can update the rules as follows:
+
+Please provide a short, neutral summary of the paper (1-2 paragraphs), as well as your score (would you accept this paper for publication in a conference if you were on the program committee?)
+This paper proposes a novel oracle-guided approach to program synthesis. Instead of complete specification, an I/O oracle is used which is shown to be useful in specific domains. 
+The paper also proposes an algorithm (an instantiation of the oracle guided approach) which iteratively synthesis programs which are correct on more and more input/output examples.
+It also presents optimization on top of the base algorithm and evaluates the different approaches.
+
+List the most significant contributions of this paper (2-5 items)
+The paper contributed a novel oracle guided approach which obviates the need for complete specification. 
+It also shows a novel constraint based technique that involves using SMT solvers for synthesis. 
+
+List the most significant limitations of the approach presented in the paper (2-5 items)
+The approach presented is only as good as the choice of the base components. Using it in domains where choosing base components 
+or their number is not trivial will be hard.
