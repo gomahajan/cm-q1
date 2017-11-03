@@ -209,3 +209,59 @@ between contextual information and ADL recognition.
 This will support systematic coordinated system development
 by making use of seamless integration and synergy of a wide
 range of data and technologies.
+- DISCUSSION ON ACTIVITY RECOGNITION
+- Activity Recognition Approach Comparison
+- Cook [132] created a single benchmark dataset that contains
+11 separate sensor event datasets collected from seven physical
+testbeds.
+- Activity Sensing and Activity Recognition
+- Liao et al. [156] use continuous
+2-D GPS data as input to a CRF. One solution to adapt activity
+models to sensor types is to include all available sensors in a
+discriminative or generative model, and allow the model itself
+to choose the most effective ones for any given situation. This
+is known as sensor selection or active sensing [133].
+- EMERGING TRENDS AND DIRECTIONS
+- Complex Activity Recognition single user
+- Wu et al. [134] proposed an algorithm using factorial
+CRF (FCRF) to recognize multiple concurrent activities
+- Hu and Yang [135]
+proposed a two-level probabilistic and goal-correlation framework
+that deals with both concurrent and interleaving goals
+from observed activity sequences.
+- Modayil et al. [136] introduced interleaved HMMs to model
+both interactivity and intraactivity dynamics
+- Gu et al. [87] proposed an emerging patternbased
+approach to sequential, interleaved and concurrent activity
+recognition.
+- Complex Activity Recognition multiple user
+- Lin and Fu [144]
+proposed a layered model to learn multiple users’ activity preferences
+- Wang et al. [145] used CHMMs to recognize multiuser
+activities
+- Singla et al. [146] proposed a single
+HMM model for two residents.
+- Hoey
+and Grzes [147] present a multilevel DBN model
+- Scalability
+- Chen and Nugent [126] developed activity
+ontologies
+- Okeyo
+et al. [167] extended this idea by developing learning algorithms
+- Abnormal Activity Recognition
+
+
+## A survey on wearable systems for monitoring and early diagnosis for the elderly [59]
+survey-health-sensors
+
+## Activity knowledge transfer in smart environments
+knowledge-transfer-smart-homes
+
+## Recognizing Daily Activities with RFID-Based Sensors
+daily-rfid
+
+## An ‘Object-Use Fingerprint’: The Use of Electronic Sensors for Human Identification
+sensor-human-identification
+
+## Fine-Grained Activity Recognition by Aggregating Abstract Object Usage
+fine-grained-object
