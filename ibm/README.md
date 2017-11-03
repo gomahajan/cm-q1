@@ -259,9 +259,22 @@ knowledge-transfer-smart-homes
 
 ## Recognizing Daily Activities with RFID-Based Sensors
 daily-rfid
+- Discusses the use of WISP sensor architecture. 
+- Uses HMM as a model. 
+- Does not require user to wear bracelet.
+- Compared with iBracelet
 
 ## An ‘Object-Use Fingerprint’: The Use of Electronic Sensors for Human Identification
 sensor-human-identification
 
 ## Fine-Grained Activity Recognition by Aggregating Abstract Object Usage
 fine-grained-object
+- Philipose et al. [15]
+- demonstrate accurate activity recognition in the
+presence of **interleaved and interrupted activities**.
+- The activities that the user performed shared objects
+in common.
+- The activities were not performed sequentially or in
+isolation. During a pause in any given activity, progress
+was attempted in other parallel activities
+- Compares independant HMMs, connected HMMS and DBNs on these characteristics
