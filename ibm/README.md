@@ -254,21 +254,22 @@ et al. [167] extended this idea by developing learning algorithms
 ## A survey on wearable systems for monitoring and early diagnosis for the elderly [59]
 survey-health-sensors
 
-## Activity knowledge transfer in smart environments
+## Activity knowledge transfer in smart environments [51]
 knowledge-transfer-smart-homes
 
 ## Recognizing Daily Activities with RFID-Based Sensors
+## Inferring activities from interactions with objects
 daily-rfid
 - Discusses the use of WISP sensor architecture. 
 - Uses HMM as a model. 
 - Does not require user to wear bracelet.
 - Compared with iBracelet
 
-## An ‘Object-Use Fingerprint’: The Use of Electronic Sensors for Human Identification
+## An ‘Object-Use Fingerprint’: The Use of Electronic Sensors for Human Identification [79]
 sensor-human-identification
 
-## Fine-Grained Activity Recognition by Aggregating Abstract Object Usage
-fine-grained-object
+## Fine-Grained Activity Recognition by Aggregating Abstract Object Usage [78] 
+fine-grained-object 
 - Philipose et al. [15]
 - demonstrate accurate activity recognition in the
 presence of **interleaved and interrupted activities**.
@@ -278,3 +279,52 @@ in common.
 isolation. During a pause in any given activity, progress
 was attempted in other parallel activities
 - Compares independant HMMs, connected HMMS and DBNs on these characteristics
+
+## Simultaneous tracking and activity recognition (STAR) using many anonymous, binary sensor, [82]
+simultaneous-recognition
+- anonymous and binary when it can not directly identify people
+- bottom-up (sensor data to activities)
+- a particle filter approach
+
+
+## Recurrent Neural Network for Human Activity Recognition in Smart Home
+rnn-smart
+- compares rnn, hmm, nbc 
+
+## Human Activity Recognition in a Smart Home Environment with Stacked Denoising Autoencoders
+auto-encoders-smart
+- video, wearable, environment
+- used autoencoder to recognise activities. 
+- compared with hmm, nb, svm
+
+##  A competitive approach for human activity recognition on smartphones
+- a competitive approach developed for an activity recognition challenge
+
+## A comparative study on human activity recognition using inertial sensors in a smartphone.
+- explores the power of triaxial accelerometer and
+gyroscope built-in a smartphone in recognizing human physical
+activities
+- simple locomotion
+
+## Simple and complex activity recognition through smart phones
+- complex activities tried
+- max 50% accuracy
+
+## RFID-based indoor location tracking to ensure the safety of the elderly in smart home environments
+- uses rfid to track elderly
+
+## Feature learning for activity recognition in ubiquitous computing.
+
+## Activity recognition from user-annotated acceleration data
+
+## Accurate activity recognition in a home setting
+
+##  Extracting and composing robust features with denoising autoencoders
+
+##  A fast learning algorithm for deep belief nets
+
+## Wellness sensor networks: A proposal and implementation for smart home for assisted living
+
+## Elderly activities recognition and classification for applications in assisted living
+
+## Sensor-based Bayesian detection of anomalous living patterns in a home setting
