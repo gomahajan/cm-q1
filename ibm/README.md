@@ -368,6 +368,72 @@ was on the opposite hand.
 5. For certain activities (e.g., toileting aspects of hygiene), the bracelet was
 removed, according to followup interviews.
 
+## Object relevance weight pattern mining for activity recognition and segmentation
+object-relevance-weight
+
+## Human activity recognition in smart homes: Combining passive RFID and load signatures of electrical devices
+
+## Unstructured Human Activity Detection from RGBD Images
+rgbd-kinect
+
+## Entropy-based abnormal activity detection fusing RGB-D and domotic sensors
+
+## RFID Systems in Healthcare Settings and Activity of Daily Living in Smart Homes: A Review
+rfid-review
+- 3,7,8,9
+- 3 rfid types; active, semi, passive
+- Other projects: 22 - 34 table
+- rfid solutions: 5, 42-46, 2
+- BADLs, IADLs
+- challanges
+
+## Keeping the Resident in the Loop: Adapting the Smart Home to the User [FUN]
+smart-home-1
+- 6,7,8,9,10
+- considers humans usually change their habits and activities over time
+- These data are mined by our frequent and periodic activity
+miner (FPAM) algorithm to discover activity patterns of interest
+for automation.
+- These patterns are then modeled by our hierarchal
+activity model (HAM) to further utilize the underlying
+temporal and structural information as part of related context.
+- The pattern adaptation miner (PAM) algorithm adapts to any
+changes in those patterns and responds to user guidance.
+
+## Introducing a New Benchmarked Dataset for Activity Monitoring
+- dataset PAMAP
+- uses IMUs, accelerometer, gyroscope and magnetometer
+
+## A Novel Approach for Addressing Wandering off Elderly Using Low Cost Passive RFID Tags
+wandering-rfid
+- uses rfid to track elders
+
+## Unsupervised Recognition of Interleaved Activities of Daily Living through Ontological and Probabilistic Reasoning [FUN]
+unsupervised-ontology
+- uses Markov Logic Networks
+- works with interleaved, concurrent activities 
+- references to lots of datasets to test
+
+## Hierarchical Task Recognition and Planning in Smart Homes with Partial Observability [FUN]
+hierarchical-smart
+- recognises goals
+- reasons about future steps for an older adult
+
+## MetaQ: A knowledge-driven framework for context-aware activity recognition combining SPARQL and OWL 2 activity patterns
+metaq-smart
+- introduced substitute for OWL2
+- discusses deployment in hospital
+- able to infer from multi-modal data
+- would be interesting to see how it deals with only environment sensor data
+
+## Recording Proximity to Everyday Objects with a Radio Frequency Identification Logger while Performing Activities of Daily Living
+
+## Human Activity Recognition in Smart Homes Based on Passive RFID Localization.
+
+## RFID-Based Indoor Location Tracking to Ensure the Safety of the Elderly in Smart Home Environments
+
+## A Content-Aware Fridge Based on RFID in Smart Home for Home-Healthcare
+
 ## Feature learning for activity recognition in ubiquitous computing.
 
 ## Activity recognition from user-annotated acceleration data
