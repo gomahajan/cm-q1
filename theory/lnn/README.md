@@ -13,8 +13,9 @@
 5) Note: even for the non-realizable case for every activation function, there exists a loss function such that local minima ==> global minima
 
 ## Local minima and plateaus in hierarchical structures of multilayer perceptrons
-1) Critical point with H-1 hidden neurons, leads to "line" of critical points with H hidden neurons
+1) For a function that has a optimal in H-1, shows that critical point maps to multiple (lines) critical points in H space.
 2) Gives necessary and sufficient conditions for them being local minimas or saddle points
 3) Do not require special properties of the target, loss functions and activation functions
+4) Shows how to move from space of parameters to space of function and between parameter space of H-1 neurons and H neurons. 
 
 ## On the Computational Efficiency of Training Neural Networks
